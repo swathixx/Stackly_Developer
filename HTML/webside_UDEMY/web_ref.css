@@ -63,7 +63,7 @@ nav>button {
     background-image: url(https://img-c.udemycdn.com/notices/web_carousel_slide/image/c92a409a-1c97-48a6-b724-748e9b2ba958.jpg);
     height: 400px;
     width: 100%;
-    margin: 90px;
+    margin: 50px;
     padding: 10px 15px;
    
     background-size: cover;
@@ -94,4 +94,145 @@ nav>button {
     letter-spacing: 1px;
     margin-top: 19px;
     
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 1024px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header > nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav > input {
+        width: 300px;
+    }
+
+    .banner_bgd {
+        margin: 30px;
+        width: calc(100% - 60px);
+        height: 350px;
+    }
+
+    .banner {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .offer {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+        margin: 5px;
+        gap: 15px;
+    }
+
+    .logo > img {
+        height: 60px;
+        width: 60px;
+    }
+
+    header > nav {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav > input {
+        width: 90%;
+    }
+
+    nav > button {
+        width: 120px;
+    }
+
+    .banner_bgd {
+        width: calc(100% - 20px);
+        height: 300px;
+        margin: 20px 10px;
+        background-position: center;
+    }
+
+    .banner {
+        width: 90%;
+        height: auto;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .banner > h1 {
+        font-size: 22px;
+    }
+
+    .banner > p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .offer {
+        font-size: 12px;
+        padding: 7px;
+    }}
+.card-section {
+    width: 100%;
+    overflow: hidden;
+}
+.card-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; 
+}
+.card {
+    flex: 0 0 75%;
+    min-height: 380px;
+    padding: 50px 40px;
+    border-radius: 20px;
+    scroll-snap-align: center;
+    background-size: cover;
+    background-position: center;
+}
+.class1 {
+    background-image: url("https://img-c.udemycdn.com/notices/lohp_hero_banner/image/64dc0534-90f4-408a-9599-9712c4452f12.png");
+}
+
+.class2 {
+    background-image: url("https://img-c.udemycdn.com/notices/lohp_hero_banner/image/f09fe3c4-3b79-427f-8432-01383e5afd05.png");
+}
+
+.class3 {
+    background-image: url("https://img-c.udemycdn.com/notices/lohp_hero_banner/image/6aaaf590-a970-49fd-a737-a1248e15ca15.png");
+}
+.card h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.card p {
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.card button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #6d28d9;
+    color: white;
+    font-weight: bold;
 }
