@@ -598,3 +598,98 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+@media (max-width:600px){
+
+header{
+    flex-direction:column;
+    padding:10px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+}
+
+nav input{
+    width:100%;
+    flex:100%;
+}
+
+.banner_bgd{
+    margin:20px 0;
+    height:300px;
+    padding:15px;
+}
+
+.banner{
+    width:100%;
+    margin:0;
+    padding:20px;
+}
+
+.card-container{
+    overflow-x:auto;
+}
+
+.card{
+    min-width:85%;
+}
+
+.section{
+    display:block;
+    padding:20px 15px;
+}
+
+.intro{
+    width:100%;
+    margin-bottom:20px;
+}
+
+.slide{
+    min-width:100%;
+}
+
+.cart{
+    min-width:90%;
+}
+
+.category-container,
+.course-container,
+.review-container{
+    flex-direction:column;
+}
+
+.category-card,
+.course-card,
+.review-card{
+    width:100%;
+}
+
+.promo-section,
+.contact{
+    flex-direction:column;
+    margin:15px;
+}
+
+.promo-image,
+.promo-content,
+.contact-content,
+.contact-form{
+    width:100%;
+}
+
+.form-row{
+    flex-direction:column;
+}
+
+footer{
+    flex-direction:column;
+    gap:25px;
+}
+
+.footer-bottom{
+    flex-direction:column;
+    gap:10px;
+}
+}
