@@ -104,11 +104,11 @@ console.log(c);
 
 // Create a let variable, initialize it, reassign it, and try to redeclare it.
 
-let animal
-animal="elephant"
-animal="monkey"
-let animal="tiger"
-console.log(animal);// 'animal' has already been declared
+// let animal
+// animal="elephant"
+// animal="monkey"
+// let animal="tiger"
+// console.log(animal);// 'animal' has already been declared
 
 
 // ------------------------------------------------------------------------------------------------------------------------------
@@ -122,11 +122,151 @@ const salary3=50000
 console.log(salary3);//50000
 
 // Create a const variable called company with "Stackly" and print it.
-const company="stacly"
-console.log(company);
+const company3="stacly"
+console.log(company3);//stackly
 
 // Try to reassign a const variable with another value. Observe the result.
+// const company4 = "Stackly";
+// company4 = "Necurity"; //  Assignment to constant variable
+
+
 // Try to redeclare a const variable. Observe the result.
+// const  role="developer"
+// const role //Identifier 'role' has already been declared
+
 // Create a const variable called college and initialize it with your college name.
+const college = "vctw"
+console.log(college);
+
 // Create three const variables for name, age, and department. Print them.
-// Write a program using one var, one let, and one const variable. Print all three.
+const name3 ="swathyy"
+const age4 = "21"
+const department3 ="CSE"
+console.log(name3);
+console.log(age4);
+console.log(department3);
+// swathyy
+21
+// CSE
+
+// Wri te a program using one var, one let, and one const variable. Print all three.
+var actor="karthik"
+let actores="tamana"
+const movie3="paiyah"
+console.log(actor);
+console.log(actores);
+console.log(movie3);
+// karthik
+// tamana
+// paiyah
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+// 4. Printing Statements — 7 Questions
+// Print your name using console.log().
+var name4="swayy"
+console.log(name4);//swayy
+
+// Create a variable containing your age and print it using console.log().
+var age5="21"
+console.log(age5);//21
+
+// Print the number 100 using console.log().
+console.log(100);//100
+
+// Create three variables and print their values using console.log().
+var actor1="dulkar"
+let actores1="tamana"
+const movie4="paiyah"
+console.log(actor1);
+console.log(actores1);
+console.log(movie4);
+// karthik
+// tamana
+// paiyah
+// Create a variable called message with "Hello JavaScript" and print it.
+var message ="hello javascript"
+console.log(message);//hello javascript
+
+// Create a variable, print its value, change its value, and print it again.
+var hobby;
+hobby = "movies";
+console.log(hobby); // movies
+
+hobby = "cooking";
+console.log(hobby); // cooking
+
+// Print your name, age, and qualification using three separate console.log()
+
+var name5 = "swa"
+var age6 = 21
+var qualification ="Engineering"
+console.log(name5);
+console.log(age6);
+console.log(qualification);
+//swa
+21
+// Engineering
+
+//---------------------------------------------------------------------------------------------------------------------------
+// 5. alert() — 5 Questions
+// Display "Welcome to JavaScript" using alert().
+alert("WElcome to Javascript")
+
+// Create a variable called userName and display it using alert().
+var username="swathisaravanan"
+alert(username)
+// Create a variable called userAge and display it using alert().
+var userage = 21
+alert(userage)
+// Create a variable containing "Welcome Naveen" and show it in a popup.
+const msg = "welcome naveen"
+alert(msg)
+// Create a variable containing your qualification and display it using alert().
+var qualification1 = "BE "
+alert(qualification1)
+
+//----------------------------------------------------------------------------------------------------------------------------
+// 6. prompt() — 5 Questions
+// Ask the user "What is your name?" using prompt() and print the answer in the console.
+ var name6=prompt("what is your name?")
+console.log(name6);//swa
+
+// Ask the user "How old are you?" using prompt() and display the answer using alert().
+var age7 = prompt('how old are uhh?')
+alert(age7);
+
+// Ask the user for their qualification and print the answer in the console.
+var userqualification = prompt("Qualification")
+console.log(userqualification);//be
+
+// Ask the user for their name and show the entered name in a popup.
+var username1=prompt("username")
+alert(username1);
+
+// Ask the user for their age and print the entered age in the console.
+var userAge1 = prompt("userage")
+console.log(userAge1);//21
+
+//----------------------------------------------------------------------------------------------------------------------------
+// 7. confirm() & document.writeln() — 3 Questions
+// Create a confirmation box asking "Do you know programming?".
+confirm("Do you know programming?")
+// Create a variable containing "Welcome to Batch 41" and display it using document.writeln().
+var txt = "Welcome to Batch 41"
+document.writeln(txt)
+// Ask the user "Do you want to continue?" using confirm().
+confirm("Do you want to continue?")
+// -----------------------------------------------------------------------------------------------------------------------
+// 8. Console Methods — 2 Questions
+// Write one program that uses console.log(), console.warn(), and console.error() to display three different messages.
+console.log("task completed");
+console.warn("Complete within deadline")
+console.error("timeout")
+
+
+// Write a program using console.log(), console.warn(), console.error(), and console.clear(). Observe what happens after each statement
+
+console.log("swayyyy");
+console.warn("shedule time")
+console.clear();
