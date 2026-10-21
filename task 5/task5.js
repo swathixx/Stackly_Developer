@@ -73,7 +73,7 @@ let b=arr4.flat(Infinity)
 console.log(b);
 
 // 11. Given let arr = [10, 20, 30, 40, 50], check whether the value 30 exists using includes().
-let arr5=[10,,20,30,40,50]
+let arr5 = [10, 20, 30, 40, 50];
 let c=arr5.includes(30)
 console.log(c);
 
@@ -89,7 +89,7 @@ console.log(e);
 
 // 14. Create an array of numbers and arrange its elements using sort().
 let sort=[10,50,70,27,84,46,29]
-let f=sort.sort()
+let f = sort.sort((a, b) => a - b);
 console.log(f);
 
 // 15. Create an array of 7 numbers and reverse the order using reverse().
@@ -191,22 +191,24 @@ console.log(new_array);
 
 
 // 21. Given let arr = [10, 20, 30, 40], extract all four values into separate variables using array destructuring.
-let arr8=[10,20,30,40]
+let arr8 = [10, 20, 30, 40];
 
-let [] = arr8;
-console.log(arr8);
-
+let [n1, n2, n3, n4] = arr8;
+console.log(n1, n2, n3, n4);
 // 22. Given let nested = [1, 2, [3, 4, [5, 6]]], extract the values 1, 2, 3, 4, 5, and 6 using nested destructuring.
 let nested1 = [1, 2, [3, 4, [5, 6]]];
-let [d1,d2,[d3,d4,[d5,d6]]] = nested1;
-console.log(nested1);
+
+let [d1, d2, [d3, d4, [d5, d6]]] = nested1;
+console.log(d1, d2, d3, d4, d5, d6);
+
 
 
 
 // 23. Create an array containing a student's name, age, and CGPA. Extract these values using destructuring and print them.
-let student=["swathi",21,9]
-let[]=student;
-console.log(student);
+let student = ["swathi", 21, 9];
+
+let [studentName, studentAge, cgpa] = student;
+console.log(studentName, studentAge, cgpa);
 
 
 // OUTPUT
@@ -221,42 +223,30 @@ console.log(student);
 
 
 // 24. Create an object containing name, role, and location. Extract these properties using object destructuring.
-var company={
-    name2:"swathyy",
-    role1:"developer",
-    location:{
-        mainlocation:"Salem",
-        currentlocation:"chennai"
-    },
-};
-console.log(company.location.currentlocation);
+let {
+    name2,
+    role1,
+    location: { mainlocation, currentlocation }
+} = company;
+
+console.log(name2, role1, mainlocation, currentlocation);
 
 
 // 25. Create an object containing a student's name and a nested address object with city and state. Extract the city and state using nested object destructuring.
-var snames={
-    namee:["swathy","sarathi",["varun","varsha",["priyahh"]]],
-    address:{
-        city:"thambikottai",
-        state:"TamilNadu"
-    },
-};
-let{namee,address}=snames;
-console.log(address);
+let { address: { city, state } } = snames;
+console.log(city, state);
 
 
 
 // 26. Given an object with name, role, and location: { mainLocation, currentLocation }, print all four values using destructuring.
 
-var objval ={
-    namme : "swathyy",
-    role : "software",
-     location: { 
-        mainLocation :"salem",
-       currentLocation : "chennai"}
-}
+let {
+    namme,
+    role,
+    location: { mainLocation, currentLocation }
+} = objval;
 
-var {namme,role,location} = objval;
-console.log(objval);
+console.log(namme, role, mainLocation, currentLocation);
 
 // OUTPUT
 // chennai
@@ -277,9 +267,9 @@ console.log(objval);
 // 27. Create an array of 10 numbers. Remove the first and last elements, add two new numbers at the beginning, and print the final array.
 
 let num9 = [1,2,3,4,5,6,7,8,9,10]
-num9.shift(0);
-num9.pop(num9-1)
-num9.unshift(-1,0)
+num9.shift();
+num9.pop();
+num9.unshift(-1, 0);
 console.log(num9);
 
 // 28. Create an array containing duplicate numbers. Use includes(), indexOf(), and lastIndexOf() to check and print information about one selected number.
